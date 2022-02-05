@@ -3,10 +3,7 @@
   hosts: dev
   become: yes
   become_user: ansible
-  ansible_user: ansible
-  ansible_connection: ssh
-  ansible_ssh_private_key_file: /home/ansible/.ssh/id_rsa
-  
+ 
   tasks:
     - name: install httpd
       yum:
