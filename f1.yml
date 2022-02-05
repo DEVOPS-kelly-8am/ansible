@@ -1,7 +1,6 @@
 ---
 - name: Play Web - Create apache directories and username in web servers
   hosts: dev
-  become: yes
   become_user: ansible
  
   tasks:
