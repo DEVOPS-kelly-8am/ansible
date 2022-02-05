@@ -1,0 +1,18 @@
+---
+- hosts: testservers
+  tasks:
+  - name: executing sample command
+    command: echo -e "This is the first line, \n This is second line"
+    register: result
+
+  - name: printing variable
+    debug:
+      var: result
+
+  - name: printing variable with stdout
+    debug:
+      var: result.stdout
+
+  - name: printing variable with stdout.lines
+    debug:
+      msg: "{{result.stdout_lines}}"
