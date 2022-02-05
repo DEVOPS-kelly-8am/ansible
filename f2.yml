@@ -1,7 +1,7 @@
 ---
   # Play1 - WebServer related tasks
   - name: Play Web - Create apache directories and username in web servers
-    hosts: webservers
+    hosts: dev
     become: yes
     become_user: root
     tasks:
